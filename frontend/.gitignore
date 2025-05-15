@@ -24,5 +24,6 @@ yarn-error.log*
 
 # 忽略しないようにする設定
 !frontend/
+!frontend/**
 !frontend/src/
 !frontend/public/
