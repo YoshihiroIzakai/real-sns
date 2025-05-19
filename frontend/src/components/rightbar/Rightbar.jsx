@@ -44,35 +44,63 @@ export default function Rightbar({ user }) {
       </>
     );
   };
-
-  const ProfileRightbar = () => {
+  
+ const ProfileRightbar = () => {
     return (
       <>
         <h4 className="rightbarTitle">ユーザー情報</h4>
         <div className="rightbarInfo">
           <div className="rightbarinfoItem">
             <span className="rightbarInfoKey">出身：</span>
-            <span className="rightbarInfoValue">京都</span>
+            <span className="rightbarInfoKey">京都</span>
           </div>
-        </div>
-        <h4 className="rightbarTitle">あなたの友達</h4>
-        <div className="rightbarFollowings">
-          {[1, 2, 3, 4, 5].map((id) => (
-            <div className="rightbarFollowing" key={id}>
+          <h4 className="rightbarTitle">あなたの友達</h4>
+          <div className="rightbarFollowings">
+            <div className="rightbarFollowing">
               <img 
-                src={`${PUBLIC_FOLDER}person/${id}.jpeg`} 
+                src={PUBLIC_FOLDER + "/person/1.jpeg"} 
                 alt="" 
                 className="rightbarFollowingImg"
               />
-              <span className="rightbarFollowingName">
-                {["Yoshi Code", "Yamaki", "Koga", "Matukubo", "Kikukawa"][id - 1]}
-              </span>
+              <span className="rightbarFollowingName">Yoshi Code</span>
             </div>
-          ))}
+            <div className="rightbarFollowing">
+              <img 
+                src={PUBLIC_FOLDER + "/person/2.jpeg"} 
+                alt="" 
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">Yamaki</span>
+            </div>
+            <div className="rightbarFollowing">
+              <img 
+                src={PUBLIC_FOLDER + "/person/3.jpeg"} 
+                alt="" 
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">Koga</span>
+            </div>
+            <div className="rightbarFollowing">
+              <img 
+                src={PUBLIC_FOLDER + "/person/4.jpeg"} 
+                alt="" 
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">Matukubo</span>
+            </div>
+            <div className="rightbarFollowing">
+              <img 
+                src={PUBLIC_FOLDER + "/person/5.jpeg"} 
+                alt="" 
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">Kikukawa</span>
+            </div>
+          </div>
         </div>
       </>
-    );
-  };
+    )
+  }
 
   return (
     <div className="rightbar">
