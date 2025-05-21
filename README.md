@@ -1,4 +1,4 @@
-## 環境構築方法
+## 環境構築方法(noseチェック済み)
 
 ```bash
 git clone git clone git@github.com:YoshihiroIzakai/real-sns.git
