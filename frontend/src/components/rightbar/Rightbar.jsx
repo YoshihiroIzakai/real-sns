@@ -7,7 +7,7 @@ export default function Rightbar({ user }) {
   const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
 
   const HomeRightbar = () => {
-    return(
+    return (
       <>
         <div className="eventContainer">
           <img src={PUBLIC_FOLDER + "star.png"} alt="" className="starImg"/>
@@ -19,8 +19,8 @@ export default function Rightbar({ user }) {
         <h4 className="rightbarTitle">オンラインの友達</h4>
         <ul className="rightbarFriendList">
           {Users.map((user) => (
-            <Online  user={user} key={user.id} />
-             ))}
+            <Online user={user} key={user.id} />
+          ))}
         </ul>
         <p className="promotionTitle">プロモーション広告</p>
         <img 
@@ -42,10 +42,10 @@ export default function Rightbar({ user }) {
         />
         <p className="promotionName">YoshiCode株式会社</p>
       </>
-    )
-  }
+    );
+  };
   
-  const ProfileRightbar = () => {
+ const ProfileRightbar = () => {
     return (
       <>
         <h4 className="rightbarTitle">ユーザー情報</h4>
@@ -108,5 +108,5 @@ export default function Rightbar({ user }) {
         {user ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
     </div>
-  )
+  );
 }

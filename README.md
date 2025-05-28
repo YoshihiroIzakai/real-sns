@@ -1,7 +1,7 @@
-## 環境構築方法
+## 環境構築方法(noseチェック済み)
 
 ```bash
-git clone https://github.com/YoshihiroIzakai/real-sns.git
+git clone git clone git@github.com:YoshihiroIzakai/real-sns.git
 cd real-sns
 
 フロントエンドのセットアップ
@@ -12,6 +12,7 @@ npm start
 バックエンドのセットアップ
 cd ../backend
 npm install
+chmod +x ./node_modules/.bin/nodemon
 npm start
 ```
 
@@ -42,3 +43,5 @@ npm start
 - MongoDB：NoSQLデータベース
 - Mongoose：スキーマベースのMongoDBモデル
 ```
+
+「新しい変更」
