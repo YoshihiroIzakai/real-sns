@@ -15,7 +15,7 @@ export default function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        //パスワードと確認用のパスワードパスワードが合っているかどうかを確認
+        //パスワードと確認用のパスワードが合っているかどうかを確認
         if(password.current.value !== passwordConfirmation.current.value) {
             passwordConfirmation.current.setCustomValidity("パスワードが違います。");
         }else{
